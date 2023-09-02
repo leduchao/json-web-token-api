@@ -13,7 +13,7 @@ namespace JsonWebTokenApi.Controllers
 	[ApiController]
 	public class AuthsController : ControllerBase
 	{
-		public static User user = new();
+		public static readonly User user = new();
 		private readonly IConfiguration _configuration;
 
 		public AuthsController(IConfiguration configuration)
